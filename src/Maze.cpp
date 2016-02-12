@@ -41,10 +41,6 @@ Maze::Maze(string filename){
 *
 */
 Maze::~Maze(){
-
-    for(int i=0;i<cols;i++){
-        delete[]maze[i]; //this part was allocated with new[], so use delete[]
-    }
     delete[] maze;
 }
 
