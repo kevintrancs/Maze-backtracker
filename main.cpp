@@ -5,6 +5,7 @@
  * Class: CPSC 223                                          *
  * Professor: Otto Borchert                                 *
  * Assignment Backtrack Maze Program - Recursive call       *
+ * NOTE: Please test this using a windows system!           *
  * **********************************************************
  ************************************************************/
 #include <iostream>
