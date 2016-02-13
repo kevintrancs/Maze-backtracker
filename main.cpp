@@ -27,7 +27,7 @@ int main()
     cout << endl;
 
     if(goNorth(maze, creature)){
-        cout << "Maze Path found(Finish - Start): " << endl;
+        cout << "Maze Path found(Start - Finish): " << endl;
         creature.printPath();
     }
     else

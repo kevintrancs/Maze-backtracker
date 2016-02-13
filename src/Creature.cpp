@@ -43,11 +43,17 @@ int Creature::getCol(){
 void Creature::pushToPath(int _row, int _col){
     cCol = _col;
     cRow = _row;
-    Node* n = new Node();
-    n->row = _row;
-    n->col = _col;
-    n->next = path;
-    path = n;
+    Node *ptr;
+    Node* temp = path;
+    ptr = new Node();
+    ptr->row = _row;
+    ptr->col = _col;
+    ptr->next = NULL;
+
+    while(temp->next!=NULL){
+        temp = temp->next;
+    }
+    temp->next = ptr;
 }
 
 /**
@@ -57,12 +63,19 @@ void Creature::pushToPath(int _row, int _col){
 *
 */
 void Creature::popOffPath(){
-    Node* deleteNode = new Node();
-    deleteNode = path;
-    path = path->next;
-    delete deleteNode;
-    cRow = path->row;
-    cCol = path->col;
+   Node* temp = path;
+   Node* top = path;
+   while(temp->next != NULL){
+        temp = temp->next;
+   }
+   while(top->next !=temp){
+        top = top->next;
+   }
+
+   top->next = NULL;
+   cCol = top->col;
+   cRow = top->row;
+   delete(temp);
 }
 
 /**
