@@ -36,15 +36,6 @@ Maze::Maze(string filename){
 }
 
 /**
-*Deconstructor
-*Deletes the maze
-*
-*/
-Maze::~Maze(){
-    delete[] maze;
-}
-
-/**
 *Returns the number of Col of the maze
 *@return cols
 */

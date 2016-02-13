@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1455314965 source:c:\users\kevin\documents\cs122\cleanmaze\main.cpp
+	<iostream>
+	"Maze.h"
+	"Creature.h"
+
+1455144142 source:c:\users\kevin\documents\cs122\cleanmaze\src\creature.cpp
+	"Creature.h"
+	<iostream>
+
+1455171372 c:\users\kevin\documents\cs122\cleanmaze\include\creature.h
+
+1455326657 source:c:\users\kevin\documents\cs122\cleanmaze\src\maze.cpp
+	"Maze.h"
+
+1455326657 c:\users\kevin\documents\cs122\cleanmaze\include\maze.h
+	<iostream>
+	<fstream>
+

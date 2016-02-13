@@ -8,7 +8,6 @@ class Maze{
 
 public:
     Maze(string filename);
-    ~Maze();
     int getCols();
     int getRows();
     void printMaze();
